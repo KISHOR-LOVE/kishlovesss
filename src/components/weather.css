@@ -65,35 +65,80 @@
     width: 26px;
     margin-top: 10px;
 }
-
-/* * Extra small screens (phones in portrait mode) */ 
-@media (max-width: 480px) {
+@media (max-width: 500px) {
     .weather {
-        padding: 10px;
-        width:95%;
+        padding: 20px; /* Adjust padding for mobile */
+        width: 90%;
+        height: 50%;
     }
 
-    .temp {
-        font-size: 50px;
-    }
-
-    .location {
-        font-size: 28px;
+    .search-box {
+        display: flex;
+        align-items: center;
+        gap: 8px; /* Reduced gap for mobile */
+        width: 80%;
     }
 
     .search-box input {
-        height: 35px;
+        height: 40px; /* Smaller height for mobile */
+        border: none;
+        outline: none;
+        border-radius: 40px;
+        padding-left: 20px; /* Adjust padding */
+        color: #626262;
+        background: #ebfffc;
+        font-size: 16px; /* Reduced font size */
+        width: calc(100% - 50px); /* Makes input take most of the space */
     }
 
     .search-box img {
-        width: 35px;
+        width: 40px; /* Adjust width for mobile */
+        padding: 10px;
+        border-radius: 50%;
+        background: #ebfffc;
+        cursor: pointer;
+    }
+
+    .weatherimage {
+        width: 120px; /* Smaller image size */
+        margin: 20px 0; /* Adjust margin */
+    }
+
+    .temp {
+        color: white;
+        font-size: 50px; /* Smaller font size for mobile */
+        line-height: 1;
+    }
+
+    .location {
+        color: white;
+        font-size: 30px; /* Reduced size for location */
+    }
+
+    .weatherdata {
+        width: 100%;
+        margin-top: 20px; /* Smaller margin for mobile */
+        color: white;
+        display: flex;
+        flex-direction: column; /* Stack items on mobile */
+        gap: 10px;
     }
 
     .weatherdata .col {
-        font-size: 16px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 18px; /* Reduced font size */
+        justify-content: center; /* Center aligned */
+    }
+
+    .weatherdata .col span {
+        font-size: 14px; /* Smaller font size */
     }
 
     .weatherdata .col img {
-        width: 18px;
+        width: 22px; /* Adjust image size */
+        margin-top: 5px;
     }
 }
+
