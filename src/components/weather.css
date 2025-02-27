@@ -68,8 +68,8 @@
 @media (max-width: 700px) {
     .weather {
         padding: 20px; /* Adjust padding for mobile */
-        width: 90vw;
-        height: 90vh;
+        width: 100vw;
+        height: 100vh;
     }
 
     .search-box {
@@ -100,7 +100,7 @@
     }
 
     .weatherimage {
-        width: 120px; /* Smaller image size */
+        width: 150px; /* Smaller image size */
         margin: 20px 0; /* Adjust margin */
     }
 
@@ -112,7 +112,7 @@
 
     .location {
         color: white;
-        font-size: 30px; /* Reduced size for location */
+        font-size: 40px; /* Reduced size for location */
     }
 
     .weatherdata {
@@ -128,17 +128,17 @@
         display: flex;
         align-items: center;
         gap: 8px;
-        font-size: 18px; /* Reduced font size */
+        font-size: 30px; /* Reduced font size */
         justify-content: center; /* Center aligned */
     }
 
     .weatherdata .col span {
-        font-size: 14px; /* Smaller font size */
+        font-size: 25px; /* Smaller font size */
     }
 
     .weatherdata .col img {
-        width: 22px; /* Adjust image size */
-        margin-top: 5px;
+        width: 30px; /* Adjust image size */
+        margin-top: 10px;
     }
 }
 
